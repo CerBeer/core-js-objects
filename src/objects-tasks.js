@@ -237,7 +237,7 @@ function fromJSON(proto, json) {
  *    ]
  */
 function sortCitiesArray(arr) {
-  return arr.sort(function (a, b) {
+  return arr.sort((a, b) => {
     return `${a.country}${a.city}`.localeCompare(`${b.country}${b.city}`);
   });
 }
